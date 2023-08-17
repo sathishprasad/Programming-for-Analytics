@@ -1,0 +1,613 @@
+Sales.Associate,Location,Month,Hours,Items,Sales
+Alicia,Hillsborough,Apr,61,11,17
+Alicia,Hillsborough,Aug,56,5,1
+Alicia,Hillsborough,Dec,67,22,157
+Alicia,Hillsborough,Feb,77,16,166
+Alicia,Hillsborough,Jan,60,14,87
+Alicia,Hillsborough,Jul,62,7,63
+Alicia,Hillsborough,Jun,58,10,49
+Alicia,Hillsborough,Mar,70,10,0
+Alicia,Hillsborough,May,64,14,100
+Alicia,Hillsborough,Nov,79,21,70
+Alicia,Hillsborough,Oct,65,15,43
+Alicia,Hillsborough,Sep,67,9,2
+Angela,Hillsborough,Apr,56,13,78
+Angela,Hillsborough,Aug,62,9,29
+Angela,Hillsborough,Dec,57,20,134
+Angela,Hillsborough,Feb,62,4,1
+Angela,Hillsborough,Jan,70,15,56
+Angela,Hillsborough,Jul,67,9,58
+Angela,Hillsborough,Jun,67,7,70
+Angela,Hillsborough,Mar,69,5,23
+Angela,Hillsborough,May,67,12,86
+Angela,Hillsborough,Nov,65,19,77
+Angela,Hillsborough,Oct,82,12,58
+Angela,Hillsborough,Sep,73,15,148
+Anthony,Raleigh,Apr,35,4,57
+Anthony,Raleigh,Aug,32,3,10
+Anthony,Raleigh,Dec,33,13,87
+Anthony,Raleigh,Feb,32,5,4
+Anthony,Raleigh,Jan,23,3,1
+Anthony,Raleigh,Jul,24,8,49
+Anthony,Raleigh,Jun,27,6,49
+Anthony,Raleigh,Mar,39,8,62
+Anthony,Raleigh,May,22,5,56
+Anthony,Raleigh,Nov,29,3,29
+Anthony,Raleigh,Oct,28,3,8
+Anthony,Raleigh,Sep,28,7,4
+Betty,Apex,Apr,62,8,20
+Betty,Apex,Aug,55,11,77
+Betty,Apex,Dec,59,18,21
+Betty,Apex,Feb,58,6,19
+Betty,Apex,Jan,56,9,63
+Betty,Apex,Jul,61,3,12
+Betty,Apex,Jun,50,6,60
+Betty,Apex,Mar,41,5,11
+Betty,Apex,May,60,5,38
+Betty,Apex,Nov,53,8,32
+Betty,Apex,Oct,48,5,17
+Betty,Apex,Sep,57,12,87
+Bobby,Raleigh,Apr,42,10,79
+Bobby,Raleigh,Aug,53,11,95
+Bobby,Raleigh,Dec,40,16,71
+Bobby,Raleigh,Feb,31,9,20
+Bobby,Raleigh,Jan,35,4,27
+Bobby,Raleigh,Jul,32,6,46
+Bobby,Raleigh,Jun,36,4,16
+Bobby,Raleigh,Mar,27,1,21
+Bobby,Raleigh,May,47,4,15
+Bobby,Raleigh,Nov,47,17,177
+Bobby,Raleigh,Oct,37,9,46
+Bobby,Raleigh,Sep,36,3,11
+Carlos,Raleigh,Apr,28,18,44
+Carlos,Raleigh,Aug,27,11,103
+Carlos,Raleigh,Dec,21,10,50
+Carlos,Raleigh,Feb,41,14,36
+Carlos,Raleigh,Jan,27,14,55
+Carlos,Raleigh,Jul,27,16,129
+Carlos,Raleigh,Jun,35,26,11
+Carlos,Raleigh,Mar,29,16,88
+Carlos,Raleigh,May,29,8,33
+Carlos,Raleigh,Nov,29,13,48
+Carlos,Raleigh,Oct,29,8,43
+Carlos,Raleigh,Sep,43,19,0
+Carlos,Wake Forest,Apr,61,11,46
+Carlos,Wake Forest,Aug,70,11,50
+Carlos,Wake Forest,Dec,64,21,116
+Carlos,Wake Forest,Feb,70,10,54
+Carlos,Wake Forest,Jan,68,8,50
+Carlos,Wake Forest,Jul,76,18,114
+Carlos,Wake Forest,Jun,73,12,41
+Carlos,Wake Forest,Mar,57,11,73
+Carlos,Wake Forest,May,63,17,152
+Carlos,Wake Forest,Nov,76,19,16
+Carlos,Wake Forest,Oct,76,16,18
+Carlos,Wake Forest,Sep,72,14,6
+Charles,Durham,Apr,47,8,88
+Charles,Durham,Aug,49,20,63
+Charles,Durham,Dec,58,26,235
+Charles,Durham,Feb,45,14,31
+Charles,Durham,Jan,47,12,7
+Charles,Durham,Jul,52,8,68
+Charles,Durham,Jun,71,17,122
+Charles,Durham,Mar,47,17,136
+Charles,Durham,May,63,22,102
+Charles,Durham,Nov,42,15,26
+Charles,Durham,Oct,53,14,91
+Charles,Durham,Sep,48,16,43
+Christopher,Wake Forest,Apr,52,21,14
+Christopher,Wake Forest,Aug,64,18,101
+Christopher,Wake Forest,Dec,63,32,268
+Christopher,Wake Forest,Feb,70,19,184
+Christopher,Wake Forest,Jan,62,28,118
+Christopher,Wake Forest,Jul,65,37,224
+Christopher,Wake Forest,Jun,54,26,163
+Christopher,Wake Forest,Mar,64,32,39
+Christopher,Wake Forest,May,50,11,67
+Christopher,Wake Forest,Nov,66,42,412
+Christopher,Wake Forest,Oct,71,31,264
+Christopher,Wake Forest,Sep,71,27,202
+Crystal,Durham,Apr,50,16,145
+Crystal,Durham,Aug,56,19,12
+Crystal,Durham,Dec,41,25,108
+Crystal,Durham,Feb,46,22,184
+Crystal,Durham,Jan,52,31,223
+Crystal,Durham,Jul,57,26,220
+Crystal,Durham,Jun,54,20,127
+Crystal,Durham,Mar,35,18,0
+Crystal,Durham,May,49,16,81
+Crystal,Durham,Nov,52,29,73
+Crystal,Durham,Oct,50,13,126
+Crystal,Durham,Sep,52,31,191
+Daniel,Apex,Apr,53,14,13
+Daniel,Apex,Aug,58,13,0
+Daniel,Apex,Dec,62,17,64
+Daniel,Apex,Feb,57,9,51
+Daniel,Apex,Jan,56,11,5
+Daniel,Apex,Jul,50,3,1
+Daniel,Apex,Jun,60,4,13
+Daniel,Apex,Mar,72,14,33
+Daniel,Apex,May,57,7,53
+Daniel,Apex,Nov,67,19,47
+Daniel,Apex,Oct,56,11,47
+Daniel,Apex,Sep,51,8,44
+Danielle,Apex,Apr,45,21,8
+Danielle,Apex,Aug,46,30,159
+Danielle,Apex,Dec,48,24,176
+Danielle,Apex,Feb,43,22,175
+Danielle,Apex,Jan,55,29,108
+Danielle,Apex,Jul,48,22,20
+Danielle,Apex,Jun,52,20,79
+Danielle,Apex,Mar,44,21,71
+Danielle,Apex,May,45,17,132
+Danielle,Apex,Nov,49,26,248
+Danielle,Apex,Oct,40,25,54
+Danielle,Apex,Sep,26,7,66
+David,Apex,Apr,30,9,71
+David,Apex,Aug,24,7,31
+David,Apex,Dec,19,10,38
+David,Apex,Feb,28,12,71
+David,Apex,Jan,21,8,87
+David,Apex,Jul,33,13,16
+David,Apex,Jun,37,8,14
+David,Apex,Mar,27,3,13
+David,Apex,May,29,10,28
+David,Apex,Nov,24,12,18
+David,Apex,Oct,27,10,74
+David,Apex,Sep,31,13,17
+Debra,Cary,Apr,39,13,40
+Debra,Cary,Aug,49,17,55
+Debra,Cary,Dec,48,10,106
+Debra,Cary,Feb,45,7,26
+Debra,Cary,Jan,55,8,67
+Debra,Cary,Jul,66,13,77
+Debra,Cary,Jun,54,14,103
+Debra,Cary,Mar,61,14,74
+Debra,Cary,May,54,18,35
+Debra,Cary,Nov,64,20,156
+Debra,Cary,Oct,56,10,38
+Debra,Cary,Sep,57,14,118
+Denae,Hillsborough,Apr,60,1,10
+Denae,Hillsborough,Aug,64,3,30
+Denae,Hillsborough,Dec,60,7,6
+Denae,Hillsborough,Feb,69,1,14
+Denae,Hillsborough,Jan,79,2,1
+Denae,Hillsborough,Jul,52,0,0
+Denae,Hillsborough,Jun,65,0,0
+Denae,Hillsborough,Mar,60,0,0
+Denae,Hillsborough,May,70,2,9
+Denae,Hillsborough,Nov,84,8,53
+Denae,Hillsborough,Oct,57,1,0
+Denae,Hillsborough,Sep,60,2,17
+Donald,Cary,Apr,58,5,10
+Donald,Cary,Aug,28,5,28
+Donald,Cary,Dec,57,9,68
+Donald,Cary,Feb,59,5,17
+Donald,Cary,Jan,49,6,49
+Donald,Cary,Jul,51,10,69
+Donald,Cary,Jun,74,5,44
+Donald,Cary,Mar,49,7,29
+Donald,Cary,May,55,2,4
+Donald,Cary,Nov,53,15,92
+Donald,Cary,Oct,54,2,20
+Donald,Cary,Sep,56,3,9
+Donald,Chapel Hill,Apr,40,19,22
+Donald,Chapel Hill,Aug,42,14,119
+Donald,Chapel Hill,Dec,48,21,104
+Donald,Chapel Hill,Feb,36,13,51
+Donald,Chapel Hill,Jan,49,23,211
+Donald,Chapel Hill,Jul,47,14,122
+Donald,Chapel Hill,Jun,56,20,209
+Donald,Chapel Hill,Mar,35,22,172
+Donald,Chapel Hill,May,43,11,16
+Donald,Chapel Hill,Nov,50,25,226
+Donald,Chapel Hill,Oct,41,23,3
+Donald,Chapel Hill,Sep,38,14,62
+Doris,Durham,Apr,27,10,80
+Doris,Durham,Aug,40,15,16
+Doris,Durham,Dec,35,16,1
+Doris,Durham,Feb,31,16,145
+Doris,Durham,Jan,28,11,4
+Doris,Durham,Jul,20,9,19
+Doris,Durham,Jun,31,19,142
+Doris,Durham,Mar,41,17,33
+Doris,Durham,May,33,13,126
+Doris,Durham,Nov,33,13,99
+Doris,Durham,Oct,28,10,28
+Doris,Durham,Sep,29,9,54
+Elizabeth,Durham,Apr,60,23,73
+Elizabeth,Durham,Aug,66,18,72
+Elizabeth,Durham,Dec,59,29,180
+Elizabeth,Durham,Feb,59,24,37
+Elizabeth,Durham,Jan,67,41,280
+Elizabeth,Durham,Jul,64,28,209
+Elizabeth,Durham,Jun,69,32,89
+Elizabeth,Durham,Mar,52,24,217
+Elizabeth,Durham,May,75,33,295
+Elizabeth,Durham,Nov,83,35,131
+Elizabeth,Durham,Oct,57,12,50
+Elizabeth,Durham,Sep,60,26,208
+Gerald,Hillsborough,Apr,53,7,6
+Gerald,Hillsborough,Aug,60,8,17
+Gerald,Hillsborough,Dec,57,16,97
+Gerald,Hillsborough,Feb,47,3,14
+Gerald,Hillsborough,Jan,58,11,15
+Gerald,Hillsborough,Jul,55,7,12
+Gerald,Hillsborough,Jun,57,13,63
+Gerald,Hillsborough,Mar,49,5,19
+Gerald,Hillsborough,May,64,9,11
+Gerald,Hillsborough,Nov,64,15,84
+Gerald,Hillsborough,Oct,52,4,14
+Gerald,Hillsborough,Sep,52,4,34
+Glenda,Raleigh,Apr,45,4,33
+Glenda,Raleigh,Aug,48,6,60
+Glenda,Raleigh,Dec,54,15,65
+Glenda,Raleigh,Feb,40,7,6
+Glenda,Raleigh,Jan,36,6,40
+Glenda,Raleigh,Jul,37,6,48
+Glenda,Raleigh,Jun,36,7,32
+Glenda,Raleigh,Mar,26,5,48
+Glenda,Raleigh,May,43,8,45
+Glenda,Raleigh,Nov,48,10,48
+Glenda,Raleigh,Oct,44,6,56
+Glenda,Raleigh,Sep,34,3,36
+Harold,Raleigh,Apr,56,10,79
+Harold,Raleigh,Aug,49,10,64
+Harold,Raleigh,Dec,55,9,76
+Harold,Raleigh,Feb,47,9,21
+Harold,Raleigh,Jan,53,11,35
+Harold,Raleigh,Jul,56,13,10
+Harold,Raleigh,Jun,62,10,106
+Harold,Raleigh,Mar,39,8,40
+Harold,Raleigh,May,59,16,127
+Harold,Raleigh,Nov,50,19,162
+Harold,Raleigh,Oct,57,8,65
+Harold,Raleigh,Sep,60,7,23
+Jasmine,Morrisville,Apr,68,24,27
+Jasmine,Morrisville,Aug,95,46,395
+Jasmine,Morrisville,Dec,79,53,10
+Jasmine,Morrisville,Feb,79,29,217
+Jasmine,Morrisville,Jan,78,40,60
+Jasmine,Morrisville,Jul,71,32,113
+Jasmine,Morrisville,Jun,68,32,188
+Jasmine,Morrisville,Mar,81,33,268
+Jasmine,Morrisville,May,68,27,173
+Jasmine,Morrisville,Nov,85,49,346
+Jasmine,Morrisville,Oct,74,32,288
+Jasmine,Morrisville,Sep,60,37,137
+John,Chapel Hill,Apr,65,8,7
+John,Chapel Hill,Aug,72,11,100
+John,Chapel Hill,Dec,74,14,126
+John,Chapel Hill,Feb,68,17,84
+John,Chapel Hill,Jan,67,13,38
+John,Chapel Hill,Jul,72,7,39
+John,Chapel Hill,Jun,69,9,55
+John,Chapel Hill,Mar,56,7,36
+John,Chapel Hill,May,60,6,38
+John,Chapel Hill,Nov,72,13,40
+John,Chapel Hill,Oct,79,7,71
+John,Chapel Hill,Sep,74,12,62
+Karen,Hillsborough,Apr,46,10,46
+Karen,Hillsborough,Aug,48,12,29
+Karen,Hillsborough,Dec,38,11,19
+Karen,Hillsborough,Feb,39,7,14
+Karen,Hillsborough,Jan,50,13,39
+Karen,Hillsborough,Jul,63,14,34
+Karen,Hillsborough,Jun,35,6,16
+Karen,Hillsborough,Mar,46,6,23
+Karen,Hillsborough,May,39,8,61
+Karen,Hillsborough,Nov,55,15,51
+Karen,Hillsborough,Oct,53,13,31
+Karen,Hillsborough,Sep,56,13,55
+Kayla,Morrisville,Apr,29,0,0
+Kayla,Morrisville,Aug,26,2,11
+Kayla,Morrisville,Dec,24,4,10
+Kayla,Morrisville,Feb,23,2,1
+Kayla,Morrisville,Jan,22,1,4
+Kayla,Morrisville,Jul,30,0,0
+Kayla,Morrisville,Jun,28,3,11
+Kayla,Morrisville,Mar,18,2,20
+Kayla,Morrisville,May,30,3,1
+Kayla,Morrisville,Nov,26,6,3
+Kayla,Morrisville,Oct,27,0,0
+Kayla,Morrisville,Sep,28,1,10
+Kenneth,Raleigh,Apr,55,12,115
+Kenneth,Raleigh,Aug,48,8,57
+Kenneth,Raleigh,Dec,52,14,108
+Kenneth,Raleigh,Feb,33,4,43
+Kenneth,Raleigh,Jan,43,8,59
+Kenneth,Raleigh,Jul,55,21,200
+Kenneth,Raleigh,Jun,54,12,25
+Kenneth,Raleigh,Mar,63,17,114
+Kenneth,Raleigh,May,50,12,71
+Kenneth,Raleigh,Nov,46,18,117
+Kenneth,Raleigh,Oct,50,15,69
+Kenneth,Raleigh,Sep,38,7,14
+Kurt,Durham,Apr,34,11,20
+Kurt,Durham,Aug,34,20,141
+Kurt,Durham,Dec,41,22,36
+Kurt,Durham,Feb,35,18,132
+Kurt,Durham,Jan,44,19,84
+Kurt,Durham,Jul,45,20,145
+Kurt,Durham,Jun,47,17,19
+Kurt,Durham,Mar,27,9,75
+Kurt,Durham,May,33,13,108
+Kurt,Durham,Nov,49,26,47
+Kurt,Durham,Oct,33,11,87
+Kurt,Durham,Sep,41,15,119
+Megan,Hillsborough,Apr,76,32,147
+Megan,Hillsborough,Aug,85,28,66
+Megan,Hillsborough,Dec,75,33,178
+Megan,Hillsborough,Feb,91,38,262
+Megan,Hillsborough,Jan,101,41,215
+Megan,Hillsborough,Jul,60,26,235
+Megan,Hillsborough,Jun,66,25,44
+Megan,Hillsborough,Mar,84,40,300
+Megan,Hillsborough,May,77,33,10
+Megan,Hillsborough,Nov,77,34,266
+Megan,Hillsborough,Oct,77,26,38
+Megan,Hillsborough,Sep,80,29,124
+Melissa,Morrisville,Apr,43,4,15
+Melissa,Morrisville,Aug,42,8,25
+Melissa,Morrisville,Dec,43,8,60
+Melissa,Morrisville,Feb,37,2,0
+Melissa,Morrisville,Jan,50,5,1
+Melissa,Morrisville,Jul,40,2,17
+Melissa,Morrisville,Jun,44,5,17
+Melissa,Morrisville,Mar,41,5,40
+Melissa,Morrisville,May,42,4,3
+Melissa,Morrisville,Nov,36,9,35
+Melissa,Morrisville,Oct,53,4,19
+Melissa,Morrisville,Sep,47,6,41
+Michael,Raleigh,Apr,39,13,62
+Michael,Raleigh,Aug,45,10,42
+Michael,Raleigh,Dec,53,25,93
+Michael,Raleigh,Feb,38,7,33
+Michael,Raleigh,Jan,49,18,26
+Michael,Raleigh,Jul,44,9,2
+Michael,Raleigh,Jun,43,14,37
+Michael,Raleigh,Mar,43,10,95
+Michael,Raleigh,May,32,9,2
+Michael,Raleigh,Nov,42,10,68
+Michael,Raleigh,Oct,43,10,10
+Michael,Raleigh,Sep,38,6,14
+Mohamed,Durham,Apr,30,15,28
+Mohamed,Durham,Aug,29,17,80
+Mohamed,Durham,Dec,43,20,16
+Mohamed,Durham,Feb,38,25,196
+Mohamed,Durham,Jan,33,11,98
+Mohamed,Durham,Jul,41,19,81
+Mohamed,Durham,Jun,41,30,118
+Mohamed,Durham,Mar,32,10,36
+Mohamed,Durham,May,39,12,41
+Mohamed,Durham,Nov,37,28,187
+Mohamed,Durham,Oct,44,20,118
+Mohamed,Durham,Sep,45,20,1
+Pat,Durham,Apr,73,13,49
+Pat,Durham,Aug,76,15,17
+Pat,Durham,Dec,88,24,61
+Pat,Durham,Feb,75,10,91
+Pat,Durham,Jan,80,15,104
+Pat,Durham,Jul,69,7,6
+Pat,Durham,Jun,89,16,78
+Pat,Durham,Mar,77,10,92
+Pat,Durham,May,94,16,124
+Pat,Durham,Nov,75,24,56
+Pat,Durham,Oct,60,11,88
+Pat,Durham,Sep,80,21,140
+Rachel,Durham,Apr,37,19,81
+Rachel,Durham,Aug,32,9,104
+Rachel,Durham,Dec,34,11,30
+Rachel,Durham,Feb,37,22,87
+Rachel,Durham,Jan,33,17,29
+Rachel,Durham,Jul,19,6,54
+Rachel,Durham,Jun,25,14,31
+Rachel,Durham,Mar,35,17,27
+Rachel,Durham,May,29,19,31
+Rachel,Durham,Nov,29,14,110
+Rachel,Durham,Oct,38,25,239
+Rachel,Durham,Sep,25,7,44
+Richard,Cary,Apr,26,11,29
+Richard,Cary,Aug,35,13,124
+Richard,Cary,Dec,31,13,14
+Richard,Cary,Feb,33,11,91
+Richard,Cary,Jan,22,4,8
+Richard,Cary,Jul,34,14,66
+Richard,Cary,Jun,28,9,84
+Richard,Cary,Mar,35,14,25
+Richard,Cary,May,39,12,39
+Richard,Cary,Nov,33,11,87
+Richard,Cary,Oct,29,10,59
+Richard,Cary,Sep,33,10,60
+Richard,Raleigh,Apr,30,5,25
+Richard,Raleigh,Aug,33,3,30
+Richard,Raleigh,Dec,31,7,50
+Richard,Raleigh,Feb,37,8,19
+Richard,Raleigh,Jan,31,3,11
+Richard,Raleigh,Jul,39,4,45
+Richard,Raleigh,Jun,36,8,46
+Richard,Raleigh,Mar,36,6,36
+Richard,Raleigh,May,34,4,4
+Richard,Raleigh,Nov,37,11,17
+Richard,Raleigh,Oct,44,7,28
+Richard,Raleigh,Sep,30,5,7
+Rita,Morrisville,Apr,38,19,126
+Rita,Morrisville,Aug,47,20,165
+Rita,Morrisville,Dec,34,19,133
+Rita,Morrisville,Feb,34,13,118
+Rita,Morrisville,Jan,27,15,70
+Rita,Morrisville,Jul,30,5,40
+Rita,Morrisville,Jun,40,13,9
+Rita,Morrisville,Mar,38,12,55
+Rita,Morrisville,May,26,12,63
+Rita,Morrisville,Nov,41,17,78
+Rita,Morrisville,Oct,40,20,22
+Rita,Morrisville,Sep,31,11,23
+Robert,Cary,Apr,61,5,22
+Robert,Cary,Aug,68,0,0
+Robert,Cary,Dec,59,11,12
+Robert,Cary,Feb,66,3,3
+Robert,Cary,Jan,73,5,27
+Robert,Cary,Jul,64,2,1
+Robert,Cary,Jun,57,1,4
+Robert,Cary,Mar,52,4,29
+Robert,Cary,May,57,2,2
+Robert,Cary,Nov,64,8,63
+Robert,Cary,Oct,54,3,17
+Robert,Cary,Sep,61,6,45
+Robert,Wake Forest,Apr,44,22,168
+Robert,Wake Forest,Aug,43,20,31
+Robert,Wake Forest,Dec,41,31,88
+Robert,Wake Forest,Feb,37,25,91
+Robert,Wake Forest,Jan,50,28,239
+Robert,Wake Forest,Jul,43,18,44
+Robert,Wake Forest,Jun,51,32,128
+Robert,Wake Forest,Mar,44,28,94
+Robert,Wake Forest,May,42,28,75
+Robert,Wake Forest,Nov,52,35,56
+Robert,Wake Forest,Oct,43,16,163
+Robert,Wake Forest,Sep,52,23,209
+Roberto,Morrisville,Apr,62,20,168
+Roberto,Morrisville,Aug,65,23,84
+Roberto,Morrisville,Dec,71,30,52
+Roberto,Morrisville,Feb,58,16,4
+Roberto,Morrisville,Jan,63,19,6
+Roberto,Morrisville,Jul,67,16,151
+Roberto,Morrisville,Jun,57,19,27
+Roberto,Morrisville,Mar,63,16,95
+Roberto,Morrisville,May,70,28,182
+Roberto,Morrisville,Nov,70,22,83
+Roberto,Morrisville,Oct,59,16,43
+Roberto,Morrisville,Sep,70,25,37
+Roger,Morrisville,Apr,75,5,27
+Roger,Morrisville,Aug,64,5,6
+Roger,Morrisville,Dec,49,4,2
+Roger,Morrisville,Feb,61,6,10
+Roger,Morrisville,Jan,64,6,20
+Roger,Morrisville,Jul,57,5,41
+Roger,Morrisville,Jun,84,6,24
+Roger,Morrisville,Mar,65,7,76
+Roger,Morrisville,May,70,7,8
+Roger,Morrisville,Nov,68,9,10
+Roger,Morrisville,Oct,61,4,31
+Roger,Morrisville,Sep,73,10,82
+Rosanne,Wake Forest,Apr,60,11,29
+Rosanne,Wake Forest,Aug,41,9,69
+Rosanne,Wake Forest,Dec,35,10,52
+Rosanne,Wake Forest,Feb,46,12,109
+Rosanne,Wake Forest,Jan,49,10,36
+Rosanne,Wake Forest,Jul,57,14,63
+Rosanne,Wake Forest,Jun,58,11,45
+Rosanne,Wake Forest,Mar,44,5,30
+Rosanne,Wake Forest,May,56,7,23
+Rosanne,Wake Forest,Nov,30,7,57
+Rosanne,Wake Forest,Oct,36,4,0
+Rosanne,Wake Forest,Sep,47,12,40
+Roy,Hillsborough,Apr,39,11,65
+Roy,Hillsborough,Aug,41,19,101
+Roy,Hillsborough,Dec,49,34,303
+Roy,Hillsborough,Feb,35,13,76
+Roy,Hillsborough,Jan,38,20,176
+Roy,Hillsborough,Jul,38,21,37
+Roy,Hillsborough,Jun,43,16,143
+Roy,Hillsborough,Mar,43,16,106
+Roy,Hillsborough,May,32,22,148
+Roy,Hillsborough,Nov,32,17,59
+Roy,Hillsborough,Oct,48,17,111
+Roy,Hillsborough,Sep,35,11,76
+Ruth,Raleigh,Apr,42,18,76
+Ruth,Raleigh,Aug,34,6,42
+Ruth,Raleigh,Dec,49,15,133
+Ruth,Raleigh,Feb,52,16,138
+Ruth,Raleigh,Jan,56,16,71
+Ruth,Raleigh,Jul,45,8,79
+Ruth,Raleigh,Jun,54,10,64
+Ruth,Raleigh,Mar,46,19,98
+Ruth,Raleigh,May,29,10,81
+Ruth,Raleigh,Nov,57,23,97
+Ruth,Raleigh,Oct,40,9,54
+Ruth,Raleigh,Sep,50,11,32
+Stephanie,Durham,Apr,81,32,192
+Stephanie,Durham,Aug,63,18,121
+Stephanie,Durham,Dec,64,40,39
+Stephanie,Durham,Feb,69,31,217
+Stephanie,Durham,Jan,63,32,73
+Stephanie,Durham,Jul,78,22,169
+Stephanie,Durham,Jun,69,23,9
+Stephanie,Durham,Mar,62,20,86
+Stephanie,Durham,May,64,26,111
+Stephanie,Durham,Nov,75,47,316
+Stephanie,Durham,Oct,57,27,123
+Stephanie,Durham,Sep,72,22,148
+Suzanne,Apex,Apr,55,4,9
+Suzanne,Apex,Aug,46,9,58
+Suzanne,Apex,Dec,54,16,57
+Suzanne,Apex,Feb,68,6,10
+Suzanne,Apex,Jan,68,2,13
+Suzanne,Apex,Jul,51,7,47
+Suzanne,Apex,Jun,65,3,30
+Suzanne,Apex,Mar,67,15,94
+Suzanne,Apex,May,44,5,38
+Suzanne,Apex,Nov,63,9,14
+Suzanne,Apex,Oct,50,3,29
+Suzanne,Apex,Sep,56,9,3
+Thomas,Cary,Apr,65,2,0
+Thomas,Cary,Aug,59,7,59
+Thomas,Cary,Dec,52,7,8
+Thomas,Cary,Feb,52,1,5
+Thomas,Cary,Jan,51,7,48
+Thomas,Cary,Jul,57,4,37
+Thomas,Cary,Jun,83,4,21
+Thomas,Cary,Mar,59,5,10
+Thomas,Cary,May,54,3,0
+Thomas,Cary,Nov,61,9,69
+Thomas,Cary,Oct,54,3,13
+Thomas,Cary,Sep,58,4,21
+Thomas,Morrisville,Apr,46,19,84
+Thomas,Morrisville,Aug,40,26,58
+Thomas,Morrisville,Dec,41,32,63
+Thomas,Morrisville,Feb,43,25,196
+Thomas,Morrisville,Jan,53,22,76
+Thomas,Morrisville,Jul,61,21,104
+Thomas,Morrisville,Jun,57,18,148
+Thomas,Morrisville,Mar,39,14,51
+Thomas,Morrisville,May,36,16,147
+Thomas,Morrisville,Nov,56,25,53
+Thomas,Morrisville,Oct,61,38,47
+Thomas,Morrisville,Sep,40,13,15
+Walter,Raleigh,Apr,56,15,75
+Walter,Raleigh,Aug,59,9,77
+Walter,Raleigh,Dec,60,15,59
+Walter,Raleigh,Feb,59,7,6
+Walter,Raleigh,Jan,55,9,56
+Walter,Raleigh,Jul,52,10,42
+Walter,Raleigh,Jun,55,11,18
+Walter,Raleigh,Mar,59,7,54
+Walter,Raleigh,May,50,6,10
+Walter,Raleigh,Nov,57,11,3
+Walter,Raleigh,Oct,54,5,28
+Walter,Raleigh,Sep,57,12,70
+William,Chapel Hill,Apr,42,6,10
+William,Chapel Hill,Aug,58,8,14
+William,Chapel Hill,Dec,50,15,50
+William,Chapel Hill,Feb,48,5,0
+William,Chapel Hill,Jan,37,4,42
+William,Chapel Hill,Jul,60,7,33
+William,Chapel Hill,Jun,43,4,41
+William,Chapel Hill,Mar,51,4,49
+William,Chapel Hill,May,45,7,12
+William,Chapel Hill,Nov,55,13,12
+William,Chapel Hill,Oct,39,7,20
+William,Chapel Hill,Sep,47,10,50
+Yetta,Durham,Apr,72,1,7
+Yetta,Durham,Aug,77,4,5
+Yetta,Durham,Dec,60,9,22
+Yetta,Durham,Feb,60,4,6
+Yetta,Durham,Jan,71,3,14
+Yetta,Durham,Jul,62,3,21
+Yetta,Durham,Jun,59,5,5
+Yetta,Durham,Mar,57,3,27
+Yetta,Durham,May,70,5,38
+Yetta,Durham,Nov,65,13,104
+Yetta,Durham,Oct,58,2,7
+Yetta,Durham,Sep,73,4,2
