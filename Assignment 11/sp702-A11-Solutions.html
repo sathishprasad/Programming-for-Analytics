@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Sathish Prasad V T, SP702" />
+<meta name="author" content="Sathish Prasad V T, sp702" />
 
 <meta name="date" content="2023-08-24" />
 
-<title>Assignment 10</title>
+<title>Assignment 11</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,8 +350,8 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Assignment 10</h1>
-<h4 class="author">Sathish Prasad V T, SP702</h4>
+<h1 class="title toc-ignore">Assignment 11</h1>
+<h4 class="author">Sathish Prasad V T, sp702</h4>
 <h4 class="date">2023-08-24</h4>
 
 </div>
@@ -370,16 +370,26 @@ programs before submitting your solutions on Canvas!</p>
 </div>
 <div id="problem-1-marketing-campaign-analysis" class="section level2">
 <h2>Problem 1: Marketing Campaign Analysis</h2>
-<p>The file <code>marketing_campaigns.csv</code> contains data about a
-series of marketing campaigns; the first five lines of the file are
-shown below.</p>
-<pre><code>Date,Campaign,Impressions,Clicks
-2023-03-31,Campaign A,647,14
-2023-04-01,Campaign A,639,11
-2023-04-02,Campaign A,532,14
-2023-04-03,Campaign A,487,8</code></pre>
-<p>First, load the tidyverse package and the data.</p>
-<pre class="r"><code># TODO: Insert your code here
+<p>This problem builds off of Problem 1 from Assignment 10 and uses the
+same data (<code>marketing_campaigns.csv</code>). You may want to start
+with reusing some of your code from that assignment!</p>
+<p>First, filter the campaigns to only consider campaigns with a daily
+average CTR &gt; 0.02.</p>
+<p>Then group the data into monthly data using the
+<code>lubridate</code> method <code>floor_date</code> so that you have,
+for each campaign, the monthly number of clicks, number of Impressions,
+and CTR.</p>
+<p>Then, use <code>pivot_longer</code> to turn the data into a “wide”
+format with one column for each month and three rows for each campaign
+(clicks, impressions, and CTR).</p>
+<p>Finally, write out the resulting data to
+<code>campaigns_filtered.csv</code>; the first four lines of this file
+should appear as follows.</p>
+<pre><code>Campaign,Metric,2023-03-01,2023-04-01,2023-05-01,2023-06-01,2023-07-01          
+Campaign B,Clicks,NA,1583,1713,NA,NA                                            
+Campaign B,CTR,NA,0.0485374379101,0.0504982017569719,NA,NA                      
+Campaign B,Impressions,NA,32614,33922,NA,NA</code></pre>
+<pre class="r"><code># TODO: Insert your code here.
 library(readr)
 library(tidyverse)</code></pre>
 <pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
@@ -391,67 +401,98 @@ library(tidyverse)</code></pre>
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()
 ## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-<pre class="r"><code>marketing_data = read_delim(&quot;marketing_campaigns.csv&quot;,show_col_types =F)</code></pre>
-<p>Next, calculate CTR using the Tidyverse <code>mutate</code>
-method.</p>
-<pre class="r"><code># TODO: Calculate CTR
-marketing_data = marketing_data %&gt;% mutate(CTR=Clicks/Impressions)</code></pre>
-<p>Finally, use the tidyverse methods <code>group_by</code>,
-<code>summarize</code>, and <code>filter</code> to produce an Nx2 tibble
-of all the campaigns with an average CTR &gt; 0.02. Your output should
-have the following format (with the ?’s being replaced with letters for
-the campaigns and numbers elsewhere). You don’t need to write this out
-to a file; just print it out in your R Markdown output.</p>
-<pre><code>## # A tibble: ? × 2
-##   Campaign   avg_CTR
-##   &lt;chr&gt;        &lt;dbl&gt;
-## 1 Campaign ?  0.0???
-## 2 Campaign ?  0.0???
-##       ...</code></pre>
-<pre class="r"><code># TODO: Filter campaigns with CTR &gt; 0.02
-avg &lt;- marketing_data %&gt;%
-  group_by(Campaign) %&gt;%                
-  summarize(avg_CTR = mean(CTR)) %&gt;%    
-  filter(avg_CTR &gt; 0.02)  
-avg</code></pre>
-<pre><code>## # A tibble: 6 × 2
-##   Campaign   avg_CTR
-##   &lt;chr&gt;        &lt;dbl&gt;
-## 1 Campaign B  0.0495
-## 2 Campaign D  0.0454
-## 3 Campaign E  0.0326
-## 4 Campaign H  0.0282
-## 5 Campaign J  0.0305
-## 6 Campaign L  0.0275</code></pre>
+<pre class="r"><code>marketing_data = read_delim(&#39;marketing_campaigns.csv&#39;,show_col_types = F)
+marketing_data = marketing_data %&gt;% mutate(CTR=Clicks /Impressions)
+filtered_df &lt;- marketing_data %&gt;%
+  group_by(Campaign) %&gt;%
+  mutate(avg_CTR = mean(CTR)) %&gt;%
+  filter(avg_CTR &gt; 0.02)
+View(filtered_df)
+filtered_df$Date = floor_date(filtered_df$Date, unit = &quot;month&quot;)
+
+monthly_summary = filtered_df %&gt;%
+  group_by(Campaign, Date) %&gt;%
+  summarize(
+    Clicks = round(sum(Clicks)),
+    Impressions = round(sum(Impressions)),
+    CTR = Clicks/Impressions,
+    .groups = &quot;drop&quot;
+  )
+
+monthly_summary = monthly_summary %&gt;%
+  pivot_longer(cols = c(Clicks,CTR,Impressions),
+               names_to = &quot;Metric&quot;,
+               values_to = &quot;Value&quot;)
+
+monthly_summary = monthly_summary %&gt;%
+  pivot_wider(names_from = Date, values_from = Value)
+
+write_csv(monthly_summary,&#39;campaigns_filtered.csv&#39;,col_names = T)</code></pre>
 </div>
 <div id="problem-2-manipulating-product-data" class="section level2">
 <h2>Problem 2: Manipulating Product Data</h2>
-<p>You have a product data <code>products.csv</code> with the following
-columns: <code>Item</code>, <code>Retail.Price</code> and
-<code>Unit.Cost</code>; first, load this data.</p>
-<pre class="r"><code># TODO: Load the data
-products = read_delim(&#39;products.csv&#39;,show_col_types = F)</code></pre>
-<p>Now use the <code>mutate</code> method to create a new column
-<code>Margin</code> using the formula Margin = (Retail.Price -
-Unit.Cost) / Retail.Price).</p>
-<pre class="r"><code># TODO: Calculate Margin
-products = products %&gt;% mutate(Margin=(Retail.Price-Unit.Cost)/Retail.Price)</code></pre>
-<p>Use the <code>separate</code> method to separate the “Item” column
-into “Item” and “Category” columns using the space-padded hyphen as a
-separator (<code>&quot; - &quot;</code>).</p>
-<pre class="r"><code># TODO: Separate Item into Item and Category
-products = products %&gt;% separate(Item, into =c(&#39;Item&#39;,&#39;Category&#39;),sep =&#39;-&#39;)</code></pre>
-<p>Finally, calculate the average Margin for each Category and write the
-resulting data out to <code>avg_margin_by_category.csv</code>. The first
-five lines of this file should appear as follows.</p>
-<pre><code>Category,avg_Margin
-Backpacks,0.152980205100494
-Belt Buckles,0.17708841870366
-Belts,0.159983304991489
-Boots,0.157098313776764</code></pre>
-<pre class="r"><code># TODO: Calculate average Margin per Category and write out to avg_margin_by_category.csv
-avg_margin_by_category = products %&gt;% group_by(Category) %&gt;% summarize(avg_Margin = mean(Margin))
-write_csv(avg_margin_by_category,&quot;avg_margin_by_category.csv&quot;)</code></pre>
+<p>This problem builds off of Problem 2 from Assignment 10 and uses the
+same data (<code>products.csv</code>). You may want to reuse some of
+your code from that assignment!</p>
+<p>Your manager has decided that the product categories can be
+simplified to the following.</p>
+<pre><code>Bags (634 items)    
+Belts (164 items)   
+Shoes (696 items)
+Jewelry (222 items)
+Hats (181 items)
+Keychains (18 items)    
+Wallets (190 items)
+Neckties (106 items)
+Outerwear (16 items)
+Sunglasses (377 items)
+Suspenders (20 items)
+Umbrellas (25 items)
+Watches (351 items)</code></pre>
+<p>Use <code>fct_collapse</code> to assign each product to its new
+category label. Yes, you do need to figure out which old categories
+belong to which of the simplified categories. You are free to discuss
+this with your peers if needed, but try to figure it out on your own if
+you can! The method <code>fct_count</code> may also come in handy to
+check your work!</p>
+<p>With these new categories, recompute the average margins per category
+and write out the results to
+<code>avg_margin_by_new_category.csv</code>; the first five lines of
+this file should look as follows.</p>
+<pre><code>Simplified.Category,avg_Margin
+Bags,0.165022591140384
+Belts,0.165824075527352
+Shoes,0.159532640824002
+Jewelry,0.164746143437297</code></pre>
+<pre class="r"><code># TODO: Insert your code here.
+library(forcats)
+data = read_delim(&#39;products.csv&#39;,show_col_types = F)
+data = data %&gt;% mutate(Margin=(Retail.Price-Unit.Cost)/Retail.Price)
+data = data %&gt;% separate(Item, into =c(&#39;Item&#39;,&#39;Category&#39;),sep =&#39;- &#39;)
+unique_items &lt;- unique(data$Category)
+ 
+data$Simplified.Category &lt;- fct_collapse(
+  data$Category,
+  Bags = c(&quot;Crossbody Bags&quot;, &quot;Travel Duffels&quot;, &quot;Clutches&quot;, &quot;Kids&#39; Backpacks&quot;, &quot;Drawstring Bags&quot;,&quot;Sports Duffels&quot;, &quot;Messenger Bags&quot;, &quot;Backpacks&quot;, &quot;Waist Packs&quot;,&quot;Luggage&quot;,&quot;Shoulder Bags&quot;,&quot;Casual Daypacks&quot;,&quot;Totes&quot;),
+  Belts = c(&quot;Belts&quot;,&quot;Belt Buckles&quot;),
+  Shoes = c(&quot;Platforms &amp; Wedges&quot;, &quot;Flats&quot;, &quot;Pumps&quot;, &quot;Fashion Sneakers&quot;, &quot;Heeled Sandals&quot;, &quot;Oxfords&quot;, &quot;Sandals&quot;, &quot;Boots&quot;,&quot;Slippers&quot;,&quot;Shoelaces&quot;),
+  Jewelry = c(&quot;Necklaces&quot;, &quot;Brooches &amp; Pins&quot;, &quot;Jewelry&quot;),
+  Hats = c(&quot;Visors&quot;, &quot;Hats &amp; Caps&quot;, &quot;Sun Hats&quot;),
+  Keychains = c(&quot;Keyrings &amp; Keychains&quot;),
+  Wallets = c(&quot;Wallets&quot;,&quot;Money Clips&quot;),
+  Neckties = &quot;Neckties&quot;,
+  Outerwear = &quot;Outerwear&quot;,
+  Sunglasses = &quot;Sunglasses&quot;,
+  Suspenders = &quot;Suspenders&quot;,
+  Umbrellas = &quot;Umbrellas&quot;,
+  Watches = &quot;Wrist Watches&quot;
+)
+
+data = data %&gt;%
+  group_by(Simplified.Category) %&gt;%
+  summarize(avg_margin = mean(Margin))
+
+write_csv(data,&quot;avg_margin_by_new_category.csv&quot;)</code></pre>
 </div>
 
 

@@ -1,9 +1,10 @@
 ---
-title: "Assignment 10"
+title: "Assignment 11"
 author: "Sathish Prasad V T, sp702"
 date: "`r Sys.Date()`"
 output:
   html_document: default
+  word_document: default
   pdf_document: default
 ---
 
@@ -41,9 +42,7 @@ Campaign B,Impressions,NA,32614,33922,NA,NA
 ```{r problem1}
 # TODO: Insert your code here.
 library(readr)
-library(tidyr)
-library(lubridate)
-library(dplyr)
+library(tidyverse)
 marketing_data = read_delim('marketing_campaigns.csv',show_col_types = F)
 marketing_data = marketing_data %>% mutate(CTR=Clicks /Impressions)
 filtered_df <- marketing_data %>%
