@@ -45,7 +45,7 @@ library(readr)
 library(tidyverse)
 marketing_data = read_delim('marketing_campaigns.csv',show_col_types = F)
 marketing_data = marketing_data %>% mutate(CTR=Clicks /Impressions)
-filtered_df <- marketing_data %>%
+filtered_df = marketing_data %>%
   group_by(Campaign) %>%
   mutate(avg_CTR = mean(CTR)) %>%
   filter(avg_CTR > 0.02)
@@ -113,9 +113,9 @@ library(forcats)
 data = read_delim('products.csv',show_col_types = F)
 data = data %>% mutate(Margin=(Retail.Price-Unit.Cost)/Retail.Price)
 data = data %>% separate(Item, into =c('Item','Category'),sep ='- ')
-unique_items <- unique(data$Category)
+unique_items = unique(data$Category)
  
-data$Simplified.Category <- fct_collapse(
+data$Simplified.Category = fct_collapse(
   data$Category,
   Bags = c("Crossbody Bags", "Travel Duffels", "Clutches", "Kids' Backpacks", "Drawstring Bags","Sports Duffels", "Messenger Bags", "Backpacks", "Waist Packs","Luggage","Shoulder Bags","Casual Daypacks","Totes"),
   Belts = c("Belts","Belt Buckles"),

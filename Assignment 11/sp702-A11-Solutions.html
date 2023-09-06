@@ -403,7 +403,7 @@ library(tidyverse)</code></pre>
 ## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 <pre class="r"><code>marketing_data = read_delim(&#39;marketing_campaigns.csv&#39;,show_col_types = F)
 marketing_data = marketing_data %&gt;% mutate(CTR=Clicks /Impressions)
-filtered_df &lt;- marketing_data %&gt;%
+filtered_df = marketing_data %&gt;%
   group_by(Campaign) %&gt;%
   mutate(avg_CTR = mean(CTR)) %&gt;%
   filter(avg_CTR &gt; 0.02)
@@ -469,9 +469,9 @@ library(forcats)
 data = read_delim(&#39;products.csv&#39;,show_col_types = F)
 data = data %&gt;% mutate(Margin=(Retail.Price-Unit.Cost)/Retail.Price)
 data = data %&gt;% separate(Item, into =c(&#39;Item&#39;,&#39;Category&#39;),sep =&#39;- &#39;)
-unique_items &lt;- unique(data$Category)
+unique_items = unique(data$Category)
  
-data$Simplified.Category &lt;- fct_collapse(
+data$Simplified.Category = fct_collapse(
   data$Category,
   Bags = c(&quot;Crossbody Bags&quot;, &quot;Travel Duffels&quot;, &quot;Clutches&quot;, &quot;Kids&#39; Backpacks&quot;, &quot;Drawstring Bags&quot;,&quot;Sports Duffels&quot;, &quot;Messenger Bags&quot;, &quot;Backpacks&quot;, &quot;Waist Packs&quot;,&quot;Luggage&quot;,&quot;Shoulder Bags&quot;,&quot;Casual Daypacks&quot;,&quot;Totes&quot;),
   Belts = c(&quot;Belts&quot;,&quot;Belt Buckles&quot;),
